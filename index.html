@@ -46,15 +46,22 @@
 		  max-height: 150px;
 		  width: auto;
 		  height: auto;
+		  display: block;
 		}
+
 
 		/* On screens smaller than 600px */
-		@media only screen and (max-width: 600px) {
 
+		@media only screen and (max-width: 600px) {
+		  .image-row {
+		    justify-content: center; /* keeps center alignment */
+		  }
 		  .image-row img {
-		    max-width: 45%;
+		    max-width: 80%; /* larger than 45%, looks more centered */
+		    margin: 0 auto; /* enforce centering */
 		  }
 		}
+
 		
 </style>
 <body>
